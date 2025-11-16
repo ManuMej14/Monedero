@@ -15,4 +15,9 @@ public class Notificador implements Notificable {
     public void enviarSMS(String destino, String mensaje) {
         System.out.println("[SMS] -> " + destino + ": " + mensaje);
     }
+
+    public String generarMensaje(String deposito, int i) {
+        return deposito;
+    }
+
 }

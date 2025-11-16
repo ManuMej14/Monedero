@@ -25,6 +25,9 @@ public abstract class Transaccion {
     public abstract boolean revertir();
 
     public double getMonto() { return monto; }
+    public TipoTransaccion getTipo() {
+        return tipo;
+    }
     public String getId() { return id; }
     public LocalDateTime getFecha() { return fecha; }
     public int getPuntosGenerados() { return puntosGenerados; }
@@ -33,4 +36,5 @@ public abstract class Transaccion {
     public String toString() {
         return "[" + fecha + "] " + tipo + " - " + monto + " (pts: " + puntosGenerados + ") id:" + id;
     }
+
 }
